@@ -83,7 +83,7 @@ export default {
             confirmButtonText: 'Yes, delete it!'
           }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`/api/movies/${id}`)
+                axios.request(`/movies/${id}`)
                 .then( response => {
                     Swal.fire({
                         icon: 'success',
