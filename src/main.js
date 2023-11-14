@@ -7,7 +7,7 @@ import List from './components/pages/List';
 import Create from './components/pages/Create';
 import Edit from './components/pages/Edit';
 import Show from './components/pages/Show';
-import { initializeApp } from 'firebase/app';
+// import { initializeApp } from 'firebase/app';
 // import { getAuth } from "firebase/auth";
 // import { getAnalytics } from "firebase/analytics";
 
@@ -31,7 +31,7 @@ const firebaseConfig = {
 };
 
 // const analytics = getAnalytics(app);
-const app = initializeApp(firebaseConfig);
+// const app = initializeApp(firebaseConfig);
   
 const router = createRouter({
   history: createWebHistory(),
