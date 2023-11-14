@@ -8,8 +8,8 @@ import Create from './components/pages/Create';
 import Edit from './components/pages/Edit';
 import Show from './components/pages/Show';
 import { initializeApp } from 'firebase/app';
-import { getAuth } from "firebase/auth";
-import { getAnalytics } from "firebase/analytics";
+// import { getAuth } from "firebase/auth";
+// import { getAnalytics } from "firebase/analytics";
 
   
 axios.defaults.baseURL = "http://localhost:8080/";
@@ -30,7 +30,7 @@ const firebaseConfig = {
 
 };
 
-const analytics = getAnalytics(app);
+// const analytics = getAnalytics(app);
 const app = initializeApp(firebaseConfig);
   
 const router = createRouter({
