@@ -7,8 +7,10 @@ import List from './components/pages/List';
 import Create from './components/pages/Create';
 import Edit from './components/pages/Edit';
 import Show from './components/pages/Show';
+import Register from './components/Login/Register'
 import { initializeApp } from "firebase/app";
 import { getAnalytics } from "firebase/analytics";
+
 
 axios.defaults.baseURL = "http://localhost:8080/";
 
@@ -35,6 +37,7 @@ const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 console.log(analytics);
 
+
 const router = createRouter({
   history: createWebHistory(),
   routes: [
@@ -42,6 +45,7 @@ const router = createRouter({
     { path: '/create', component: Create },
     { path: '/edit/:id', component: Edit },
     { path: '/show/:id', component: Show },
+    { path: '/register', component: Register },
   ],
 });
   

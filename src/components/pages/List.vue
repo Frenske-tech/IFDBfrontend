@@ -9,6 +9,12 @@
                         >Create New movie
                     </router-link>
                 </div>
+                <div class="card-header">
+                    <router-link to="/register"
+                        class="btn btn-outline-primary"
+                        >reg
+                    </router-link>
+                </div>
                 <div class="card-body">
              
                     <table class="table table-bordered">
