@@ -30,8 +30,8 @@ const firebaseConfig = {
 
 };
 
-const analytics = getAnalytics(app);
 const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 console.log(analytics);
   
 const router = createRouter({
